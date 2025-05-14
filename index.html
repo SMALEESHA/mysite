@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandali Maleesha Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+  <style>
+    * { box-sizing: border-box; }
+
+    .container { width: 100%; background-color: #ddd; }
+
+    .skills {
+      text-align: center;
+      padding: 4px 0;
+      color: white;
+    }
+
+    .java { width: 90%; background-color: #202C64; }
+    .html { width: 90%; background-color: #4CAF50; }
+    .css { width: 80%; background-color: #2196F3; }
+    .js { width: 65%; background-color: #f44336; }
+    .php { width: 60%; background-color: #808080; }
+    .wordpress { width: 90%; background-color: #B31DC2; }
+
+    .roww:after, .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .columnn {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: black;
+      cursor: pointer;
+      color: white;
+    }
+
+    .btn:hover { background-color: #ddd; color: black; }
+    .btn.active { background-color: #666; color: white; }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      display: none;
+    }
+
+    .show { display: block; }
+  </style>
+</head>
+
+<body class="is-preload">
+
+  <header id="header">
+    <nav>
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#one">Who I Am</a></li>
+        <li><a href="#two">Skills</a></li>
+        <li><a href="#education">Education & Experience</a></li>
+        <li><a href="#work">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="intro" class="main style1 dark fullscreen">
+    <div class="content">
+      <header><h2>Hello!</h2></header>
+      <p>I'm <strong>Sandali Maleesha</strong>, an undergraduate at <strong>Wayamba University of Sri Lanka</strong>.<br>
+        "When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. So create."
+      </p>
+      <footer><a href="#one" class="button style2 down">More</a></footer>
+    </div>
+  </section>
+
+  <section id="one" class="main style2 right dark fullscreen">
+    <div class="content box style2">
+      <header><h2>Hi!</h2></header>
+      <p>I am an undergraduate studying Computer Science. I'm a confident, fast learner, and adaptable individual with experience as a programmer and web developer. I am also an active volunteer and team leader.</p>
+    </div>
+    <a href="#two" class="button style2 down anchored">Next</a>
+  </section>
+
+  <section id="two" class="main style2 left dark fullscreen">
+    <div class="content box style2">
+      <header><h2>Skills</h2></header>
+      <p>WordPress</p><div class="container"><div class="skills wordpress">90%</div></div>
+      <p>Java</p><div class="container"><div class="skills java">90%</div></div>
+      <p>HTML</p><div class="container"><div class="skills html">90%</div></div>
+      <p>CSS</p><div class="container"><div class="skills css">80%</div></div>
+      <p>JavaScript</p><div class="container"><div class="skills js">65%</div></div>
+      <p>PHP</p><div class="container"><div class="skills php">60%</div></div>
+    </div>
+    <a href="#education" class="button style2 down anchored">Next</a>
+  </section>
+
+  <section id="education" class="main style3 primary">
+    <div class="content">
+      <header><h2>My Education and Experience</h2></header>
+      <div class="roww">
+        <div class="columnn" style="background-color:#aaa;">
+          <h2 style="color:#fff">Education</h2>
+          <table>
+            <tr><td>B.Sc (Joint Major), Dec 2016 - Ongoing</td><td><strong>Wayamba University of Sri Lanka</strong><br>Computer Science and Statistics.</td></tr>
+            <tr><td>BCS Diploma, Dec 2019 - Ongoing</td><td><strong>Esoft Metro Campus</strong><br>Diploma level of British Computer Society (BCS).</td></tr>
+            <tr><td>G.C.E A/L, 2012 - 2014</td><td><strong>Mahamaya Girls' College, Kandy</strong><br>Passed in Maths stream. G.C.E O/L in 2011, English Medium.</td></tr>
+          </table>
+        </div>
+        <div class="columnn" style="background-color:#bbb;">
+          <h2 style="color:#fff">Experience</h2>
+          <table>
+            <tr><td>Dec 2016 - Present</td><td><strong>Volunteer (IEEE)</strong><br>Active member of IEEE at university.</td></tr>
+            <tr><td>Dec 2016 - Present</td><td><strong>Event Coordinator</strong><br>Responsible for planning and managing university events.</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="main style3 primary">
+    <div class="content">
+      <header><h2>Portfolio</h2></header>
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('event')">Event</button>
+        <button class="btn" onclick="filterSelection('ieee')">IEEE</button>
+        <button class="btn" onclick="filterSelection('others')">Others</button>
+      </div>
+
+      <div class="row">
+        <!-- Add images as needed with proper alt tags -->
+        <div class="column ieee show"><img src="my/1.jpg" style="width:100%"><h4>IEEE Day 2018</h4></div>
+        <div class="column ieee show"><img src="my/2.jpg" style="width:100%"><h4>IEEE Xtreme 13.0</h4></div>
+        <div class="column ieee show"><img src="my/3.jpg" style="width:100%"><h4>IEEE Xtreme 12.0</h4></div>
+        <div class="column ieee show"><img src="my/4.jpg" style="width:100%"><h4>Congress 2019</h4></div>
+        <div class="column ieee show"><img src="my/5.jpg" style="width:100%"><h4>Electronic Design Competition</h4></div>
+        <div class="column ieee show"><img src="my/6.jpg" style="width:100%"><h4>SheCodress V2.0</h4></div>
+
+        <!-- Event and Others: Add titles if available -->
+        <div class="column event show"><img src="my/7.jpg" style="width:100%"></div>
+        <div class="column event show"><img src="my/8.jpg" style="width:100%"></div>
+        <div class="column others show"><img src="my/12.jpg" style="width:100%"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="https://www.facebook.com/sandalimaleeshas" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+      <li><a href="https://www.linkedin.com/in/sandali-maleesha-33b3011a5/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/SMALEESHA" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+    </ul>
+    <ul class="menu">
+      <li>Email: sandalimaleeshas@gmail.com</li>
+    </ul>
+  </footer>
+
+  <script>
+    function filterSelection(c) {
+      const elements = document.getElementsByClassName("column");
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].classList.remove("show");
+        if (elements[i].classList.contains(c)) {
+          elements[i].classList.add("show");
+        }
+      }
+      const btns = document.getElementsByClassName("btn");
+      for (let btn of btns) {
+        btn.classList.remove("active");
+      }
+      event.currentTarget.classList.add("active");
+    }
+  </script>
+
+</body>
+
+</html>
